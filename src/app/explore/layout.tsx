@@ -20,7 +20,7 @@ export default function RootLayout({
       <SearchBar />
       </div>
       <Cards/>
-      <div className="flex flex-col ml-[650px]">
+      <div className="flex justify-center">
         <Link href={"/generatenotes"}>
             <Button
               borderRadius="1.75rem"
