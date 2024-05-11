@@ -10,8 +10,10 @@ import { cn } from "@/utils/cn";
 import Link from "next/link";
 import logo from "@/../public/assets/logo.png";
 import Image from "next/image";
+import { signOut, signIn, useSession } from "next-auth/react";
 
 const Navbar = ({ className }: { className?: string }) => {
+  // const { status, data: session } = useSession();
   const [active, setActive] = useState<string | null>(null);
   return (
     <div

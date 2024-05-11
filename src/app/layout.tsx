@@ -27,3 +27,9 @@ export default function RootLayout({
     </html>
   );
 }
+
+//topic segregation
+//searching keyword in book
+//extracting all the data
+//getting more summary on data related to a certain keyword provided(prompt)
+//summarizing all the abv data
