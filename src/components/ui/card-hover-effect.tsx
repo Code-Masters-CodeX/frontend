@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
@@ -50,8 +50,12 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card className="justify-center">
-            <CardTitle className="justify-center">{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription>
+            <CardTitle className="flex flex-col justify-center align-middle items-center">
+              {item.title}
+            </CardTitle>
+            <CardDescription className="flex flex-col justify-center align-middle items-center">
+              {item.description}
+            </CardDescription>
           </Card>
         </Link>
       ))}
