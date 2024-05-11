@@ -22,9 +22,9 @@ const Navbar = ({ className }: { className?: string }) => {
         className
       )}
     >
-      <Menu setActive={setActive} className="flex flex-row justify-between">
-        <Image src={logo} alt="logo" height={30} />
-        <div className="flex flex-row justify-center gap-10">
+      <Menu setActive={setActive} className="flex flex-row items-center align-md justify-between">
+        <div className="relative"><Image src={logo} alt="logo" height={40} /></div>
+        <div className="flex flex-row justify-center gap-10 py-6">
           <Link href={"/"}>
             <MenuItem
               setActive={setActive}
@@ -33,7 +33,7 @@ const Navbar = ({ className }: { className?: string }) => {
             ></MenuItem>
           </Link>
           <MenuItem setActive={setActive} active={active} item="Explore">
-            {/* <HoveredLink href="/explore">All my content</HoveredLink> */}
+            <HoveredLink href="/explore">All my content</HoveredLink>
           </MenuItem>
           <Link href={"/about"}>
             <MenuItem
